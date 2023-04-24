@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(23, 147, 139);
 }
 
 .App-link {
@@ -35,4 +35,116 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #4ea6b1;
+  overflow: hidden;
+  z-index: -1;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+  left: 52%;
+  width: 106px;
+  height: 106px;
+  bottom: -106px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 30%;
+  width: 119px;
+  height: 119px;
+  bottom: -119px;
+  animation-delay: 2s;
+}
+.background li:nth-child(2) {
+  left: 63%;
+  width: 195px;
+  height: 195px;
+  bottom: -195px;
+  animation-delay: 9s;
+}
+.background li:nth-child(3) {
+  left: 80%;
+  width: 103px;
+  height: 103px;
+  bottom: -103px;
+  animation-delay: 10s;
+}
+.background li:nth-child(4) {
+  left: 11%;
+  width: 143px;
+  height: 143px;
+  bottom: -143px;
+  animation-delay: 19s;
+}
+.background li:nth-child(5) {
+  left: 19%;
+  width: 194px;
+  height: 194px;
+  bottom: -194px;
+  animation-delay: 23s;
+}
+.background li:nth-child(6) {
+  left: 3%;
+  width: 175px;
+  height: 175px;
+  bottom: -175px;
+  animation-delay: 7s;
+}
+.background li:nth-child(7) {
+  left: 9%;
+  width: 112px;
+  height: 112px;
+  bottom: -112px;
+  animation-delay: 23s;
+}
+.background li:nth-child(8) {
+  left: 61%;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  animation-delay: 29s;
+}
+.background li:nth-child(9) {
+  left: 11%;
+  width: 188px;
+  height: 188px;
+  bottom: -188px;
+  animation-delay: 20s;
+}
+.Header, .Footer {
+  position: relative;
+  z-index: 2;
 }

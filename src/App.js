@@ -17,16 +17,35 @@ import {
 
 function App() {
   return (
+    
+    
     <BrowserRouter>
+
+    
+    
     <div className="App">
+     <ul class="background">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+     </ul>
       
       <Header />
-  
-      <Navbar  bg="light"  variant="light" expand="lg" ms-auto > 
-        <Container  >
       
-          <Nav  className=" py-3  mx-auto" >
-            <Nav.Link as={Link} to="/">Accueil</Nav.Link>
+  
+      <Navbar  bg="light"  variant="light" expand="lg" ms-auto style={{color:'black'}} > 
+        <Container  >
+          
+      
+          <Nav  className=" py-3  mx-auto "  >
+            <Nav.Link as={Link} to="/">Accueil </Nav.Link>
             <Nav.Link as={Link} to="/formations">Formations</Nav.Link>
             <Nav.Link as={Link} to="/experiences">Experiences</Nav.Link>
             <Nav.Link as={Link} to="/certificates">Certifications</Nav.Link>
@@ -44,6 +63,7 @@ function App() {
         </div>
       
         <Footer />
+        
     </div>
     </BrowserRouter>
   );
